@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournois - Booyah Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ff-orange': '#FF6B35',
+                        'ff-dark': '#0F0F0F',
+                        'ff-gray': '#1A1A1A',
+                        'ff-gold': '#FFD700',
+                        'ff-red': '#FF3333'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ff-dark text-white font-sans antialiased">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <ff-navbar></ff-navbar>
+
+    <!-- Header -->
+    <section class="relative py-20 bg-gradient-to-b from-ff-gray to-ff-dark">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-black mb-4 text-white">
+                Nos <span class="text-ff-orange">Tournois</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Choisis ta bataille et prouve ta valeur sur le champ de combat.
+            </p>
+        </div>
+    </section>
+    <!-- BR Solo Section -->
+    <section class="py-16 bg-ff-dark pt-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-8 md:p-12">
+<div class="inline-block bg-red-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
+                            MODE SOLO
+                        </div>
+                        <h2 class="text-4xl font-black mb-4 text-white">Battle Royale Solo 🔥</h2>
+                        <p class="text-gray-400 mb-6 text-lg">
+                            Le format classique Free Fire. 50 joueurs parachutés sur l'île, un seul en sortira vivant. 
+                            Stratégie, survie et précision sont tes seules armes.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <i data-feather="users" class="text-ff-orange mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">50 Joueurs</div>
+                                    <div class="text-sm text-gray-400">Lobby complet, compétition intense</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-feather="target" class="text-ff-orange mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">1 Vainqueur</div>
+                                    <div class="text-sm text-gray-400">Seul le dernier survivant remporte le titre</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-feather="clock" class="text-ff-orange mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">~20 minutes</div>
+                                    <div class="text-sm text-gray-400">Durée moyenne d'une partie</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-ff-gray/50 rounded-xl p-6 mb-6 border border-gray-700">
+                            <h3 class="text-xl font-bold text-ff-gold mb-4 flex items-center gap-2">
+                                <i data-feather="gift"></i>
+                                Récompenses
+                            </h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-ff-gold">💎</span> 2600 Diamants
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-green-400">💰</span> 10 000 FCFA
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-ff-orange">🏆</span> Titre de Champion BR Solo
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-red-900/20 border border-red-500/30 rounded-xl p-6 mb-6">
+                            <h3 class="text-lg font-bold text-red-400 mb-2">Frais d'Inscription</h3>
+                            <div class="text-3xl font-black text-white">700 FCFA</div>
+                            <p class="text-sm text-gray-400 mt-1">Paiement requis avant confirmation</p>
+                        </div>
+
+                        <a href="https://forms.google.com/br-solo" target="_blank" class="block w-full py-4 bg-ff-orange hover:bg-orange-600 text-white text-center font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-orange-500/30 flex items-center justify-center gap-2">
+                            <i data-feather="edit-3"></i>
+                            S'inscrire au BR Solo
+                        </a>
+                    </div>
+                    
+                    <div class="relative bg-[url('https://wallpapercave.com/wp/wp7486976.jpg')] bg-cover bg-center">
+                        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/50 to-transparent md:bg-gradient-to-l"></div>
+<div class="absolute bottom-8 right-8 hidden md:block">
+                            <div class="bg-black/80 backdrop-blur-sm border border-ff-orange rounded-xl p-4">
+                                <div class="text-ff-orange font-bold text-sm mb-1">PROCHAIN TOURNOI</div>
+                                <div class="text-white font-black text-2xl">À venir</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Methods BR -->
+                <div class="bg-black/50 border-t border-gray-800 p-6 md:p-8">
+                    <h4 class="text-center text-gray-400 mb-6 text-sm uppercase tracking-wider">Moyens de Paiement pour l'inscription BR Solo</h4>
+                    <div class="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                        <div class="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 text-center hover:border-blue-500 transition-colors">
+                            <div class="text-blue-400 font-bold mb-1">Wave</div>
+                            <div class="text-white font-mono text-lg">07 10 63 60 11</div>
+                        </div>
+                        <div class="bg-orange-900/20 border border-orange-500/30 rounded-lg p-4 text-center hover:border-orange-500 transition-colors">
+                            <div class="text-orange-400 font-bold mb-1">Orange Money</div>
+                            <div class="text-white font-mono text-lg">07 10 63 80 11</div>
+                        </div>
+                        <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 text-center hover:border-yellow-500 transition-colors">
+                            <div class="text-yellow-400 font-bold mb-1">MTN MoMo</div>
+                            <div class="text-white font-mono text-lg">01 10 63 80 11</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clash Squad Section -->
+    <section class="py-16 bg-ff-gray">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid md:grid-cols-2">
+                    <div class="relative bg-[url('https://wallpapercave.com/wp/wp7486979.jpg')] bg-cover bg-center order-2 md:order-1">
+                        <div class="absolute inset-0 bg-gradient-to-l from-gray-900 via-gray-900/50 to-transparent md:bg-gradient-to-r"></div>
+<div class="absolute bottom-8 left-8 hidden md:block">
+                            <div class="bg-black/80 backdrop-blur-sm border border-ff-gold rounded-xl p-4">
+                                <div class="text-ff-gold font-bold text-sm mb-1">FORMAT ÉQUIPE</div>
+                                <div class="text-white font-black text-2xl">4v4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-8 md:p-12 order-1 md:order-2">
+                        <div class="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold mb-4">
+                            MODE ÉQUIPE
+                        </div>
+                        <h2 class="text-4xl font-black mb-4 text-white">Clash Squad ⚔️</h2>
+                        <p class="text-gray-400 mb-6 text-lg">
+                            Affrontement tactique en équipe. 4 contre 4 dans un format rapide et intense. 
+                            La coordination et la stratégie d'équipe feront la différence.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <i data-feather="users" class="text-ff-gold mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Équipes de 4</div>
+                                    <div class="text-sm text-gray-400">4 joueurs par équipe</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-feather="zap" class="text-ff-gold mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Format Rapide</div>
+                                    <div class="text-sm text-gray-400">7 rounds, première équipe à 4 victoires</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-feather="shield" class="text-ff-gold mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-white">Match Élimination</div>
+                                    <div class="text-sm text-gray-400">Pas de respawn, sois précis</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-ff-gray/50 rounded-xl p-6 mb-6 border border-gray-700">
+                            <h3 class="text-xl font-bold text-ff-gold mb-4 flex items-center gap-2">
+                                <i data-feather="gift"></i>
+                                Récompenses par Joueur
+                            </h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-ff-gold">💎</span> 450 Diamants chacun
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-ff-orange">🏆</span> Titre de Champion CS
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-blue-400">👕</span> Skin exclusif d'équipe
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-blue-900/20 border border-blue-500/30 rounded-xl p-6 mb-6">
+                            <h3 class="text-lg font-bold text-blue-400 mb-2">Frais d'Inscription</h3>
+                            <div class="text-3xl font-black text-white">1000 FCFA</div>
+                            <div class="text-sm text-gray-400">Par joueur</div>
+                        </div>
+
+                        <a href="https://forms.google.com/clash-squad" target="_blank" class="block w-full py-4 bg-ff-gold hover:bg-yellow-500 text-black text-center font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg shadow-yellow-500/30 flex items-center justify-center gap-2">
+                            <i data-feather="edit-3"></i>
+                            S'inscrire au Clash Squad
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Payment Methods CS -->
+                <div class="bg-black/50 border-t border-gray-800 p-6 md:p-8">
+                    <h4 class="text-center text-gray-400 mb-6 text-sm uppercase tracking-wider">Moyens de Paiement pour l'inscription Clash Squad</h4>
+                    <div class="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                        <div class="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4 text-center hover:border-blue-500 transition-colors">
+                            <div class="text-blue-400 font-bold mb-1">Wave</div>
+                            <div class="text-white font-mono text-lg">07 10 63 60 11</div>
+                        </div>
+                        <div class="bg-orange-900/20 border border-orange-500/30 rounded-lg p-4 text-center hover:border-orange-500 transition-colors">
+                            <div class="text-orange-400 font-bold mb-1">Orange Money</div>
+                            <div class="text-white font-mono text-lg">07 10 63 80 11</div>
+                        </div>
+                        <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-4 text-center hover:border-yellow-500 transition-colors">
+                            <div class="text-yellow-400 font-bold mb-1">MTN MoMo</div>
+                            <div class="text-white font-mono text-lg">01 10 63 80 11</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-ff-orange to-orange-600">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-4">Prêt à rejoindre la bataille ?</h2>
+            <p class="text-white/90 mb-8 text-lg">Les places sont limitées. Réserve la tienne maintenant.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://forms.gle/3jofLyYNSunwvDTx9" target="_blank" class="px-8 py-3 bg-white text-ff-orange font-bold rounded-lg hover:bg-gray-100 transition-colors">
+                    Inscription BR Solo
+                </a>
+                <a href="https://forms.gle/3jofLyYNSunwvDTx9" target="_blank" class="px-8 py-3 bg-black text-white font-bold rounded-lg hover:bg-gray-900 transition-colors">
+                    Inscription CS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <ff-footer></ff-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

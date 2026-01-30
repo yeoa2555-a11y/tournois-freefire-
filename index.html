@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booyah Battle Arena - Tournois Free Fire</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ff-orange': '#FF6B35',
+                        'ff-dark': '#0F0F0F',
+                        'ff-gray': '#1A1A1A',
+                        'ff-gold': '#FFD700',
+                        'ff-red': '#FF3333'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ff-dark text-white font-sans antialiased">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <ff-navbar></ff-navbar>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 bg-gradient-to-br from-ff-dark via-ff-gray to-black"></div>
+        <div class="absolute inset-0 opacity-110 bg-[url('https://sm.ign.com/t/ign_latam/screenshot/default/freefire456_ab3f.1200.jpg')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ff-dark via-ff-dark/50 to-transparent"></div>
+<!-- Animated Particles -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 left-10 w-2 h-2 bg-ff-orange rounded-full animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-3 h-3 bg-ff-gold rounded-full animate-bounce"></div>
+            <div class="absolute bottom-32 left-1/4 w-2 h-2 bg-white rounded-full animate-ping"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <div class="inline-block mb-6 px-4 py-2 bg-ff-orange/20 border border-ff-orange rounded-full text-ff-orange text-sm font-bold tracking-wider uppercase animate-pulse">
+                🔥 Tournois Free Fire Actifs
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-ff-orange via-ff-gold to-ff-orange bg-clip-text text-transparent drop-shadow-2xl">
+                BOOYAH BATTLE<br>ARENA
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Rejoins l'élite des survivants. Compétitions épiques, récompenses exclusives et gloire éternelle t'attendent.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#tournois" class="group relative px-8 py-4 bg-ff-orange hover:bg-orange-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/50 overflow-hidden">
+                    <span class="relative z-10 flex items-center gap-2">
+                        <i data-feather="trophy"></i>
+                        Voir les Tournois
+                    </span>
+                    <div class="absolute inset-0 bg-gradient-to-r from-orange-600 to-ff-orange opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </a>
+                
+                <a href="reglement.html" class="px-8 py-4 border-2 border-ff-gold text-ff-gold hover:bg-ff-gold hover:text-black font-bold rounded-lg transition-all duration-300 flex items-center gap-2">
+                    <i data-feather="book-open"></i>
+                    Règlement
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-ff-gray/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-ff-orange transition-colors">
+                    <div class="text-3xl font-bold text-ff-orange mb-2">50+</div>
+                    <div class="text-gray-400">Joueurs Actifs</div>
+                </div>
+                <div class="bg-ff-gray/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-ff-gold transition-colors">
+                    <div class="text-3xl font-bold text-ff-gold mb-2">2600💎</div>
+                    <div class="text-gray-400">Diamants à Gagner</div>
+                </div>
+                <div class="bg-ff-gray/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-ff-orange transition-colors">
+                    <div class="text-3xl font-bold text-ff-orange mb-2">2</div>
+                    <div class="text-gray-400">Modes de Jeu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Preview Section -->
+    <section id="tournois" class="py-20 bg-ff-gray relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+                    Choisis ton <span class="text-ff-orange">Mode de Combat</span>
+                </h2>
+                <p class="text-gray-400 text-lg">Deux formats, une seule règle : être le dernier debout.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- BR Solo Card -->
+                <div class="group relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl overflow-hidden hover:border-ff-orange transition-all duration-500 hover:transform hover:scale-105 shadow-2xl">
+                    <div class="absolute top-0 right-0 bg-ff-orange text-white px-4 py-1 rounded-bl-lg font-bold text-sm">
+                        POPULAIRE
+                    </div>
+                    <div class="h-48 bg-[url('https://lh3.googleusercontent.com/9Y1YBn12b_rgAem71spmklg74swxIup7wI-V090h5ES6PDb5QbGgeMQXuihvkBcNNG0n=h310')] bg-cover bg-center relative">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">BATTLE ROYALE</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">BR Solo 🔥</h3>
+                        <p class="text-gray-400 mb-4">50 joueurs, 1 survivant. Le test ultime de survie.</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Récompense:</span>
+                                <span class="text-ff-gold font-bold">2600💎 + 10.000 FCFA</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Inscription:</span>
+                                <span class="text-white font-bold">700 FCFA</span>
+                            </div>
+                        </div>
+
+                        <a href="https://forms.gle/3jofLyYNSunwvDTx9" target="_blank" class="block w-full py-3 bg-ff-orange hover:bg-orange-600 text-white text-center font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i data-feather="user-plus"></i>
+                            S'inscrire au BR Solo
+                        </a>
+                    </div>
+                </div>
+                <!-- Clash Squad Card -->
+                <div class="group relative bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-2xl overflow-hidden hover:border-ff-gold transition-all duration-500 hover:transform hover:scale-105 shadow-2xl">
+                    <div class="h-48 bg-[url('https://cellphones.com.vn/sforum/wp-content/uploads/2023/06/free-fire-5.jpg')] bg-cover bg-center relative">
+<div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">CLASH SQUAD</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Clash Squad ⚔️</h3>
+                        <p class="text-gray-400 mb-4">Combat en équipe. Stratégie et coordination pour la victoire.</p>
+                        
+                        <div class="space-y-2 mb-6">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Récompense:</span>
+                                <span class="text-ff-gold font-bold">450💎 par joueur</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-400">Inscription:</span>
+                                <span class="text-white font-bold">1000 FCFA/joueur</span>
+                            </div>
+                        </div>
+
+                        <a href="https://forms.gle/3jofLyYNSunwvDTx9" target="_blank" class="block w-full py-3 bg-ff-gold hover:bg-yellow-500 text-black text-center font-bold rounded-lg transition-colors flex items-center justify-center gap-2">
+                            <i data-feather="users"></i>
+                            S'inscrire au Clash Squad
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="tournois.html" class="inline-flex items-center gap-2 text-ff-orange hover:text-white transition-colors font-semibold">
+                    Voir tous les détails des tournois
+                    <i data-feather="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Quick View -->
+    <section class="py-16 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-8 text-white">Moyens de Paiement Acceptés</h3>
+            <div class="flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
+                <div class="flex items-center gap-3 bg-ff-gray px-6 py-3 rounded-full border border-blue-500">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xs">W</div>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-400">Wave</div>
+                        <div class="font-bold text-white">07 10 63 60 11</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-ff-gray px-6 py-3 rounded-full border border-orange-500">
+                    <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xs">OM</div>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-400">Orange Money</div>
+                        <div class="font-bold text-white">07 10 63 80 11</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 bg-ff-gray px-6 py-3 rounded-full border border-yellow-500">
+                    <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-xs">M</div>
+                    <div class="text-left">
+                        <div class="text-xs text-gray-400">MTN MoMo</div>
+                        <div class="font-bold text-white">01 10 63 80 11</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <ff-footer></ff-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+
+</body>
+</html>

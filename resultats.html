@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats - Booyah Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ff-orange': '#FF6B35',
+                        'ff-dark': '#0F0F0F',
+                        'ff-gray': '#1A1A1A',
+                        'ff-gold': '#FFD700',
+                        'ff-red': '#FF3333'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ff-dark text-white font-sans antialiased">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <ff-navbar></ff-navbar>
+
+    <!-- Header -->
+    <section class="relative py-20 bg-gradient-to-b from-ff-gray to-ff-dark">
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-block bg-ff-gold/20 text-ff-gold border border-ff-gold/50 px-4 py-2 rounded-full mb-4">
+                <i data-feather="award" class="inline w-4 h-4 mr-2"></i>
+                Hall of Fame
+            </div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 text-white">
+                Résultats & <span class="text-ff-gold">Gagnants</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Célébrons les champions qui ont marqué l'histoire de nos tournois.
+            </p>
+        </div>
+    </section>
+
+    <!-- Latest Tournament Results -->
+    <section class="py-16 bg-ff-dark">
+        <div class="container mx-auto px-4">
+            
+            <!-- BR Solo Winners -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-3xl font-black text-ff-orange flex items-center gap-3">
+                        <i data-feather="crosshair"></i>
+                        Dernier BR Solo
+                    </h2>
+                    <span class="text-gray-500 text-sm">Date: À définir</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                    <!-- Background Effect -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-ff-orange/10 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative z-10">
+                        <!-- 1st Place -->
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+                            <div class="relative">
+                                <div class="w-32 h-32 rounded-full bg-gradient-to-b from-ff-gold to-yellow-600 p-1">
+                                    <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
+                                        <i data-feather="user" class="w-16 h-16 text-gray-600"></i>
+                                    </div>
+                                </div>
+                                <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-ff-gold text-black px-4 py-1 rounded-full font-bold text-sm">
+                                    🥇 1er
+                                </div>
+                            </div>
+                            <div class="text-center md:text-left">
+                                <h3 class="text-3xl font-black text-white mb-2">Nom du Gagnant</h3>
+                                <p class="text-ff-gold text-xl font-bold mb-2">2600 💎 + 10.000 FCFA</p>
+                                <p class="text-gray-400">Champion BR Solo</p>
+                            </div>
+                        </div>
+
+                        <!-- 2nd & 3rd -->
+                        <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                            <div class="bg-ff-gray/50 rounded-xl p-6 border border-gray-700 flex items-center gap-4">
+                                <div class="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl">
+                                    🥈
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white">2ème Place</div>
+                                    <div class="text-gray-400 text-sm">À définir</div>
+                                    <div class="text-ff-orange text-sm font-semibold">Prix à définir</div>
+                                </div>
+                            </div>
+                            <div class="bg-ff-gray/50 rounded-xl p-6 border border-gray-700 flex items-center gap-4">
+                                <div class="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl">
+                                    🥉
+                                </div>
+                                <div>
+                                    <div class="font-bold text-white">3ème Place</div>
+                                    <div class="text-gray-400 text-sm">À définir</div>
+                                    <div class="text-ff-orange text-sm font-semibold">Prix à définir</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clash Squad Winners -->
+            <div class="max-w-5xl mx-auto mb-16">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-3xl font-black text-blue-500 flex items-center gap-3">
+                        <i data-feather="users"></i>
+                        Dernier Clash Squad
+                    </h2>
+                    <span class="text-gray-500 text-sm">Date: À définir</span>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-900 to-black border border-gray-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                    <!-- Background Effect -->
+                    <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+                    
+                    <div class="relative z-10">
+                        <div class="text-center mb-8">
+                            <div class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-bold mb-4">
+                                🏆 ÉQUIPE CHAMPIONNE
+                            </div>
+                            <h3 class="text-4xl font-black text-white mb-2">Nom de l'Équipe</h3>
+                            <p class="text-ff-gold text-xl">450 💎 par joueur</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                            <div class="bg-ff-gray rounded-xl p-4 text-center border border-gray-700">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gray-700 flex items-center justify-center mb-2">
+                                    <i data-feather="user" class="text-gray-500"></i>
+                                </div>
+                                <div class="font-bold text-sm">Joueur 1</div>
+                                <div class="text-xs text-gray-500">Capitaine</div>
+                            </div>
+                            <div class="bg-ff-gray rounded-xl p-4 text-center border border-gray-700">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gray-700 flex items-center justify-center mb-2">
+                                    <i data-feather="user" class="text-gray-500"></i>
+                                </div>
+                                <div class="font-bold text-sm">Joueur 2</div>
+                                <div class="text-xs text-gray-500">Membre</div>
+                            </div>
+                            <div class="bg-ff-gray rounded-xl p-4 text-center border border-gray-700">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gray-700 flex items-center justify-center mb-2">
+                                    <i data-feather="user" class="text-gray-500"></i>
+                                </div>
+                                <div class="font-bold text-sm">Joueur 3</div>
+                                <div class="text-xs text-gray-500">Membre</div>
+                            </div>
+                            <div class="bg-ff-gray rounded-xl p-4 text-center border border-gray-700">
+                                <div class="w-16 h-16 mx-auto rounded-full bg-gray-700 flex items-center justify-center mb-2">
+                                    <i data-feather="user" class="text-gray-500"></i>
+                                </div>
+                                <div class="font-bold text-sm">Joueur 4</div>
+                                <div class="text-xs text-gray-500">Membre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Results Table -->
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-black mb-8 text-white text-center">Historique des Tournois</h2>
+                
+                <div class="bg-ff-gray border border-gray-800 rounded-2xl overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-black/50 text-gray-400 uppercase text-sm">
+                                <tr>
+                                    <th class="px-6 py-4">Date</th>
+                                    <th class="px-6 py-4">Type</th>
+                                    <th class="px-6 py-4">Vainqueur</th>
+                                    <th class="px-6 py-4">Récompense</th>
+                                    <th class="px-6 py-4">Participants</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-800">
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="px-6 py-4 text-gray-400">--/--/----</td>
+                                    <td class="px-6 py-4">
+                                        <span class="bg-red-600/20 text-red-400 px-2 py-1 rounded text-xs">BR Solo</span>
+                                    </td>
+                                    <td class="px-6 py-4 font-bold text-white">À venir</td>
+                                    <td class="px-6 py-4 text-ff-gold">2600💎</td>
+                                    <td class="px-6 py-4 text-gray-400">--</td>
+                                </tr>
+                                <tr class="hover:bg-white/5 transition-colors">
+                                    <td class="px-6 py-4 text-gray-400">--/--/----</td>
+                                    <td class="px-6 py-4">
+                                        <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded text-xs">Clash Squad</span>
+                                    </td>
+                                    <td class="px-6 py-4 font-bold text-white">À venir</td>
+                                    <td class="px-6 py-4 text-ff-gold">450💎</td>
+                                    <td class="px-6 py-4 text-gray-400">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <p class="text-center text-gray-500 mt-4 text-sm">
+                    <i data-feather="info" class="inline w-4 h-4 mr-1"></i>
+                    Les résultats sont mis à jour après chaque tournoi
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <ff-footer></ff-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

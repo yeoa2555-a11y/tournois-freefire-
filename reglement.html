@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement - Booyah Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ff-orange': '#FF6B35',
+                        'ff-dark': '#0F0F0F',
+                        'ff-gray': '#1A1A1A',
+                        'ff-gold': '#FFD700',
+                        'ff-red': '#FF3333'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ff-dark text-white font-sans antialiased">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <ff-navbar></ff-navbar>
+    <!-- Header -->
+    <section class="relative py-20 bg-gradient-to-b from-ff-gray to-ff-dark border-b border-gray-800 pt-24">
+<div class="container mx-auto px-4 text-center">
+            <div class="inline-block bg-red-600/20 text-red-400 border border-red-600/50 px-4 py-2 rounded-full mb-4">
+                <i data-feather="alert-triangle" class="inline w-4 h-4 mr-2"></i>
+                À lire attentivement
+            </div>
+            <h1 class="text-5xl md:text-6xl font-black mb-4 text-white">
+                Règlement <span class="text-ff-orange">Officiel</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Le respect des règles est obligatoire. Toute infraction entraînera une disqualification immédiate.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rules Content -->
+    <section class="py-16 bg-ff-dark">
+        <div class="container mx-auto px-4 max-w-4xl">
+            
+            <!-- General Rules -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-black mb-6 text-ff-orange flex items-center gap-3">
+                    <i data-feather="shield"></i>
+                    Règles Générales
+                </h2>
+                <div class="bg-ff-gray border border-gray-800 rounded-2xl p-8 space-y-4">
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-ff-orange/20 text-ff-orange w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Fair Play Obligatoire</h3>
+                            <p class="text-gray-400">Toute forme de triche, hack, ou utilisation de logiciels tiers est strictement interdite et entraînera un bannissement permanent.</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700"></div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-ff-orange/20 text-ff-orange w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Compte Personnel</h3>
+                            <p class="text-gray-400">Chaque joueur doit utiliser son propre compte Free Fire. Le prêt de compte est interdit.</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700"></div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-ff-orange/20 text-ff-orange w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Ponctualité</h3>
+                            <p class="text-gray-400">Les joueurs doivent être présents 15 minutes avant le début du tournoi. Un retard de plus de 10 minutes entraîne une disqualification.</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700"></div>
+                    <div class="flex gap-4 items-start">
+                        <div class="bg-ff-orange/20 text-ff-orange w-8 h-8 rounded-full flex items-center justify-center font-bold shrink-0">4</div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Communication</h3>
+                            <p class="text-gray-400">Pour le Clash Squad, la communication vocale est autorisée uniquement via les canaux officiels du tournoi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BR Solo Specific -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-black mb-6 text-red-500 flex items-center gap-3">
+                    <i data-feather="crosshair"></i>
+                    Règles BR Solo
+                </h2>
+                <div class="bg-gradient-to-br from-red-900/20 to-gray-900 border border-red-500/30 rounded-2xl p-8">
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-red-500 mt-1 shrink-0"></i>
+                            <span>Format : 50 joueurs maximum par lobby</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-red-500 mt-1 shrink-0"></i>
+                            <span>1 partie décisive (sauf finale qui se joue en 3 rounds)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-red-500 mt-1 shrink-0"></i>
+                            <span>Le classement est déterminé par le nombre de kills et la position finale</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-red-500 mt-1 shrink-0"></i>
+                            <span>Interdiction de faire équipe (teamming) sous peine de bannissement</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-red-500 mt-1 shrink-0"></i>
+                            <span>Mode : Classique Battle Royale (Bermuda ou Purgatory selon rotation)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Clash Squad Specific -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-black mb-6 text-blue-500 flex items-center gap-3">
+                    <i data-feather="users"></i>
+                    Règles Clash Squad
+                </h2>
+                <div class="bg-gradient-to-br from-blue-900/20 to-gray-900 border border-blue-500/30 rounded-2xl p-8">
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 shrink-0"></i>
+                            <span>Format : Équipes de 4 joueurs (4v4)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 shrink-0"></i>
+                            <span>Match en 7 rounds maximum (premier à 4 victoires)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 shrink-0"></i>
+                            <span>Mode : Clash Squad Classique</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 shrink-0"></i>
+                            <span>Un remplaçant autorisé par équipe (doit être déclaré avant le tournoi)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check-circle" class="text-blue-500 mt-1 shrink-0"></i>
+                            <span>En cas de déconnexion, le round continue (pas de replay)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conditions -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-black mb-6 text-ff-gold flex items-center gap-3">
+                    <i data-feather="file-text"></i>
+                    Conditions de Participation
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-ff-gray border border-gray-800 rounded-xl p-6 hover:border-ff-gold transition-colors">
+                        <h3 class="font-bold text-white mb-3 text-lg">Âge et Localisation</h3>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li>• Âge minimum : 16 ans</li>
+                            <li>• Résidence : Côte d'Ivoire (pour les paiements)</li>
+                            <li>• Numéro de téléphone valide requis</li>
+                        </ul>
+                    </div>
+                    <div class="bg-ff-gray border border-gray-800 rounded-xl p-6 hover:border-ff-gold transition-colors">
+                        <h3 class="font-bold text-white mb-3 text-lg">Matériel Requis</h3>
+                        <ul class="space-y-2 text-gray-400 text-sm">
+                            <li>• Compte Free Fire actif (niveau 30+)</li>
+                            <li>• Connexion internet stable</li>
+                            <li>• WhatsApp pour les communications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sanctions -->
+            <div class="bg-red-900/10 border border-red-500/30 rounded-2xl p-8 mb-12">
+                <h2 class="text-2xl font-black mb-4 text-red-400 flex items-center gap-3">
+                    <i data-feather="alert-octagon"></i>
+                    Sanctions
+                </h2>
+                <p class="text-gray-300 mb-4">Les infractions suivantes entraînent une disqualification immédiate sans remboursement :</p>
+                <div class="grid md:grid-cols-2 gap-4 text-gray-400">
+                    <div class="flex items-center gap-2">
+                        <i data-feather="x-circle" class="text-red-500"></i>
+                        Utilisation de cheat/hack
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="x-circle" class="text-red-500"></i>
+                        Teaming en mode solo
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="x-circle" class="text-red-500"></i>
+                        Comportement toxique
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-feather="x-circle" class="text-red-500"></i>
+                        Fausse informations lors de l'inscription
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact for Questions -->
+            <div class="text-center bg-gradient-to-r from-ff-orange/20 to-orange-600/20 rounded-2xl p-8 border border-ff-orange/30">
+                <h3 class="text-2xl font-bold text-white mb-4">Des questions sur le règlement ?</h3>
+                <p class="text-gray-400 mb-6">Notre équipe est disponible pour clarifier tout point du règlement.</p>
+                <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 bg-ff-orange hover:bg-orange-600 text-white font-bold rounded-lg transition-colors">
+                    <i data-feather="message-circle"></i>
+                    Nous Contacter
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <ff-footer></ff-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
