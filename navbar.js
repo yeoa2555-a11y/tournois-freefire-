@@ -258,7 +258,7 @@ class FFNavbar extends HTMLElement {
           <li><a href="reglement.html">📋 Règlement</a></li>
           <li><a href="resultats.html">🎯 Résultats</a></li>
           <li><a href="contact.html">💬 Contact</a></li>
-          <li><a href="tournois.html" class="mobile-cta">🔥 S'inscrire</a></li>
+          <li><a href="https://forms.gle/1Pdhvaz8s2GEuTiq7" class="mobile-cta">🔥 S'inscrire</a></li>
         </ul>
       </div>
     `;
@@ -300,5 +300,6 @@ class FFNavbar extends HTMLElement {
     });
   }
 }
+
 
 customElements.define('ff-navbar', FFNavbar);
